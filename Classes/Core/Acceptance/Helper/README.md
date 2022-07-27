@@ -1,0 +1,1 @@
+Basic classes of testing-framework/Classes/Core/Acceptance/Helper/: - AbstractModalDialog - AbstractPageTree - Acceptance - Login - TopbarAdded Classes from EXT:screenshots/ - AbstractSiteConfiguration - AbstractTypo3Tree - Cli - CodeSnippets - Draw - FileSystem - FileTree - ModalDialog - Navigation - Screenshots
