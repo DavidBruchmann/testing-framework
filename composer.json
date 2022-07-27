@@ -29,6 +29,7 @@
     "ext-pdo": "*",
     "phpunit/phpunit": "^9.5.10",
     "psr/container": "^1.1.0 || ^2.0.0",
+    "mikey179/vfsstream": "~1.6.10",
     "typo3fluid/fluid": "^2.7.1",
     "typo3/cms-core": "12.*.*@dev",
     "typo3/cms-backend": "12.*.*@dev",
@@ -55,11 +56,6 @@
     "psr-4": {
       "TYPO3\\TestingFramework\\": "Classes/",
       "TYPO3\\PrivateContainer\\": "Resources/Core/Functional/Extensions/private_container/Classes/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "TYPO3\\TestingFramework\\Tests\\": "Tests/"
     }
   },
   "require-dev": {
