@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TYPO3\TestingFramework\Core\Tests\Unit\Functional\Framework\Acceptance\Utility;
+namespace TYPO3\TestingFramework\Tests\Unit\Core\Functional\Framework\Acceptance\Utility;
 
 /*
  * This file is part of the TYPO3 CMS project.
@@ -17,8 +17,8 @@ namespace TYPO3\TestingFramework\Core\Tests\Unit\Functional\Framework\Acceptance
  * The TYPO3 project - inspiring people to share!
  */
 
-use TYPO3\TestingFramework\Core\Tests\Unit\Functional\Framework\Acceptance\Fixtures\ClassWithComments;
-use TYPO3\TestingFramework\Core\Tests\Unit\Functional\Framework\Acceptance\Fixtures\ClassWithNoComments;
+use TYPO3\TestingFramework\Tests\Unit\Core\Functional\Framework\Acceptance\Fixtures\ClassWithComments;
+use TYPO3\TestingFramework\Tests\Unit\Core\Functional\Framework\Acceptance\Fixtures\ClassWithNoComments;
 use TYPO3\TestingFramework\Core\Acceptance\Utility\ClassUtility;
 use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 

@@ -40,7 +40,7 @@ class JsonUtility
     public static function extractFieldsFromJson(string $json, array $fields, int $inlineLevel = 99): string
     {
         $arrayIn = self::parseArrayFromJson($json);
-        $arrayOut = ArrayHelper::extractFieldsFromArray($arrayIn, $fields);
+        $arrayOut = ArrayUtility::extractFieldsFromArray($arrayIn, $fields);
         return self::printJson($arrayOut, $inlineLevel);
     }
 

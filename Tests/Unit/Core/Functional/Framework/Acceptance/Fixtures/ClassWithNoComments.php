@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TYPO3\TestingFramework\Core\Tests\Unit\Functional\Framework\Acceptance\Fixtures;
+namespace TYPO3\TestingFramework\Tests\Unit\Core\Functional\Framework\Acceptance\Fixtures;
 
 use TYPO3\TestingFramework\Core\Acceptance\Utility\ArrayUtility;
 use TYPO3\TestingFramework\Core\Acceptance\Utility\ClassUtility;

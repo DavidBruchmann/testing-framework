@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TYPO3\TestingFramework\Core\Tests\Unit\Functional\Framework\Acceptance\Utility;
+namespace TYPO3\TestingFramework\Tests\Unit\Core\Functional\Framework\Acceptance\Utility;
 
 /*
  * This file is part of the TYPO3 CMS project.
@@ -33,7 +33,7 @@ class YamlUtilityTest extends UnitTestCase
      */
     public function extractFieldsFromYaml(string $yaml, array $fields, string $expected): void
     {
-        self::assertEquals($expected, trim(YamlHelper::extractFieldsFromYaml($yaml, $fields)));
+        self::assertEquals($expected, trim(YamlUtility::extractFieldsFromYaml($yaml, $fields)));
     }
 
     public function extractFieldsFromYamlDataProvider(): array
@@ -89,7 +89,7 @@ NOWDOC
         $yaml = file_get_contents(__DIR__ . '/../Fixtures/Yaml.yaml');
         $fields = [];
 
-        self::assertEquals(Yaml::parse($yaml), Yaml::parse(YamlHelper::extractFieldsFromYaml($yaml, $fields)));
+        self::assertEquals(Yaml::parse($yaml), Yaml::parse(YamlUtility::extractFieldsFromYaml($yaml, $fields)));
     }
 
     /**
@@ -102,6 +102,6 @@ NOWDOC
 
         $this->expectException(\TypeError::class);
 
-        YamlHelper::extractFieldsFromYaml($yaml, $fields);
+        YamlUtility::extractFieldsFromYaml($yaml, $fields);
     }
 }

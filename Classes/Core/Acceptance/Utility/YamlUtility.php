@@ -43,7 +43,7 @@ class YamlUtility
     public static function extractFieldsFromYaml(string $yaml, array $fields, int $inlineLevel = 99): string
     {
         $arrayIn = Yaml::parse($yaml);
-        $arrayOut = ArrayHelper::extractFieldsFromArray($arrayIn, $fields);
+        $arrayOut = ArrayUtility::extractFieldsFromArray($arrayIn, $fields);
         $indentationSize = 2;
         return Yaml::dump($arrayOut, $inlineLevel, $indentationSize);
     }
